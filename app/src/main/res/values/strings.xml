@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">M1_JBBM_EJER_Calculadora</string>
+
+    <string name="edit_operando1">Operando 1</string>
+    <string name="edit_operando2">Operando 2</string>
+    <string name="button_Sumar">Sumar</string>
+    <string name="button_Restar">Restar</string>
+    <string name="button_Multiplicar">Multiplicar</string>
+    <string name="button_Dividir">Dividir</string>
+    <string name="button_Limpiar">Limpiar</string>
+    <string name="text_autor">Autor: Benjamin Ballesteros</string>
+    <string name="text_contador">Cantidad de operaciones: 0</string>
+</resources>

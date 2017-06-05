@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="itesm.mx.m1_jbbm_ejer_calculadora.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Operando1"
+
+        android:hint="@string/edit_operando1"
+        android:inputType="numberSigned|none"
+        android:digits="0123456789-"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Operando2"
+
+        android:hint="@string/edit_operando2"
+        android:inputType="numberSigned|none"
+        android:digits="0123456789-"
+        android:layout_below="@+id/edit_Operando1"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_Operando2"
+        android:orientation="horizontal"
+        android:id="@+id/layout_operaciones">
+        <Button
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_sumar"
+
+            android:text="@string/button_Sumar"/>
+        <Button
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_restar"
+
+            android:text="@string/button_Restar"/>
+        <Button
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_multiplicar"
+
+            android:text="@string/button_Multiplicar"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_dividir"
+
+            android:text="@string/button_Dividir"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/layout_resultado"
+        android:layout_below="@+id/layout_operaciones">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_resultado"
+
+            android:layout_gravity="bottom"
+            android:text=""
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_resultado"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_limpiar"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/button_Limpiar"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/image_info"
+
+                android:src="@drawable/info"
+                android:background="@null"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
